@@ -4,6 +4,7 @@ function App() {
   return (
     <>
       {/* React router Dom examp: /boards/boards{boards_id} */}
+      {/* Board detail */}
       <Board />
     </>
   );

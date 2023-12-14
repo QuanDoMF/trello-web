@@ -15,26 +15,44 @@ const ModeSelect = () => {
   };
 
   return (
-    <FormControl sx={{ m: 1, minWidth: 120 }} size="small">
-      <InputLabel id="label-select-dark-light-mode">Mode</InputLabel>
+    <FormControl size="small" sx={{ minWidth: "120px" }}>
+      <InputLabel
+        id="label-select-dark-light-mode"
+        sx={{ color: "white", "&.Mui-focused": { color: "White" } }}
+      >
+        Mode
+      </InputLabel>
       <Select
         labelId="demo-select-small-label"
         id="label-select-dark-light-mode"
         value={mode}
         label="Mode"
         onChange={handleChange}
+        sx={{
+          color: "white",
+          ".MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+          "&:hover .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+          "&.Mui-focused .MuiOutlinedInput-notchedOutline": {
+            borderColor: "white",
+          },
+          ".MuiSvgIcon-root": { color: "white" },
+        }}
       >
         <MenuItem value="light">
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <LigthModeIcon />
             Light
-          </div>
+          </Box>
         </MenuItem>
         <MenuItem value="dark">
-          <div style={{ display: "flex", alignItems: "center", gap: "8px" }}>
+          <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
             <DarkModeOutlinedIcon fontSize="small" />
             Dark
-          </div>
+          </Box>
         </MenuItem>
         <MenuItem value="system">
           <Box sx={{ display: "flex", alignItems: "center", gap: 1 }}>
