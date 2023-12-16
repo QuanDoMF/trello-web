@@ -10,6 +10,7 @@ import AvatarGroup from "@mui/material/AvatarGroup";
 import { Tooltip } from "@mui/material";
 import Button from "@mui/material/Button";
 import PersonAddIcon from "@mui/icons-material/PersonAdd";
+import { capitalizeFirstLetter } from "~/utils/formatters";
 // import { NoEncryption } from "@mui/icons-material";
 const MENU_STYLE = {
   backgroundColor: "transparent",
@@ -24,7 +25,7 @@ const MENU_STYLE = {
     bgcolor: "primary.50",
   },
 };
-const BoardBar = () => {
+const BoardBar = ({ board }) => {
   return (
     <Box
       sx={{
@@ -47,13 +48,13 @@ const BoardBar = () => {
       <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
         <Chip
           icon={<DashboardIcon />}
-          label="Tquandoo"
+          label={board?.title}
           clickable
           sx={MENU_STYLE}
         />
         <Chip
           icon={<VpnLockIcon />}
-          label="Public/Private Workspace"
+          label={capitalizeFirstLetter(board.type)}
           clickable
           sx={MENU_STYLE}
         />
