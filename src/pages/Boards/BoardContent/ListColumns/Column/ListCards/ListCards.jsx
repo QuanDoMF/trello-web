@@ -12,7 +12,7 @@ const ListCards = ({ cards }) => {
     >
       <Box
         sx={{
-          p: "0 5px",
+          p: "0 5px 5px 5px",
           m: "0 5px",
           display: "flex",
           flexDirection: "column",
@@ -24,8 +24,7 @@ const ListCards = ({ cards }) => {
           //     5
           //   )} - ${COLUMN_HEADER_HEIGHT}- ${COLUMN_FOOTER_HEIGHT})`,
           maxHeight: (theme) =>
-            `calc(${theme.trello.boardContentHeight} - ${theme.spacing(5)} - ${
-              theme.trello.columnHeaderHeight
+            `calc(${theme.trello.boardContentHeight} - ${theme.spacing(5)} - ${theme.trello.columnHeaderHeight
             } - ${theme.trello.columnFooterHeight})`,
           "&::-webkit-scrollbar-thumb": {
             backgroundColor: "#ced0da",

@@ -34,7 +34,7 @@ const Profiles = () => {
         >
           <Avatar
             sx={{ width: 36, height: 36 }}
-            src="https://scontent.fhan20-1.fna.fbcdn.net/v/t39.30808-6/365770753_275378225215172_6901578517584525133_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=efb6e6&_nc_eui2=AeHE49YdZBF8iAfmCDNX5kNK4Jd4-JY7J4zgl3j4ljsnjB5Q1Fczbt0zdX0VecSjkyiXw_LGlo-Wk_Tq617qqMt6&_nc_ohc=KQJdE4hyXYoAX_qMGFW&_nc_ht=scontent.fhan20-1.fna&oh=00_AfAU6AzZQIOFehOo0Crq-PdJTFeKOMEYhH6bL8jOUN2UBw&oe=657B46E1"
+            src="https://scontent.fhan2-4.fna.fbcdn.net/v/t39.30808-6/419873835_362463746506619_3905469401316009793_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeE6QrMBGcF6XH4ADpuJnfFYV0cvnl2J6HdXRy-eXYnodzCSvtBA1BfhxVuksPxLhwG7cXQW63FtFy1FQV8LAfP2&_nc_ohc=8dTU3Hy0HoQAb5OeifZ&_nc_ht=scontent.fhan2-4.fna&oh=00_AfCErRSnM9JgWoDIhjTb6jqxoZqps4LuMLtMgQQPkeb_vA&oe=661AF1AA"
           ></Avatar>
         </IconButton>
       </Tooltip>

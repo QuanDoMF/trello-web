@@ -43,7 +43,7 @@ const theme = extendTheme({
           textTransform: "none",
           borderWidth: "0.5px",
           "&:hover ": {
-            borderWidth: "2px",
+            // borderWidth: "2px",
           },
         },
       },
